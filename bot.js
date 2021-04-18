@@ -3,7 +3,7 @@ const { auth, postReplyWithMedia, postReply } = require('./config.js');
 const client = auth();
 
 // Call the stream function and pass in 'statuses/filter', our filter object, and our callback
-client.stream('statuses/filter', { track: '#RemoveNoise' }, function (stream) {
+client.stream('statuses/filter', { track: '#FilterMe' }, function (stream) {
   console.log("Searching for tweets...");
 
   // ... when we get tweet data...
