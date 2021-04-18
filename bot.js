@@ -15,7 +15,7 @@ client.stream('statuses/filter', { track: '#FilterMe' }, function (stream) {
     if (tweet.media_url) {
       console.log("Replying to tweet with video.");
       postReplyWithMedia(client, "./sample-media/video.mp4", tweet);
-      
+
     } else {
       console.log("Tweet didn't provide media. Replying with message.");
       const message = "Oops, looks like you didn't provide a media file!";

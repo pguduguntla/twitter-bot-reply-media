@@ -1,11 +1,7 @@
 var TwitterPackage = require('twitter');
 require('dotenv').config();
 const fs = require('fs');
-const _ = require('lodash')
-const request = require('request')
 const Promise = require('bluebird')
-const requestPost = Promise.promisify(request.post, { multiArgs: true })
-const requestGet = Promise.promisify(request.get, { multiArgs: true })
 
 
 // auth methods
